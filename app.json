@@ -1,0 +1,35 @@
+{
+  "name": "NASA Hackathon API",
+  "description": "FastAPI backend for NASA space biology research search",
+  "repository": "https://github.com/your-username/nasa-hackathon",
+  "keywords": ["fastapi", "nasa", "space-biology", "ai", "mongodb"],
+  "env": {
+    "AIMLAPI_KEY": {
+      "description": "Your AI/ML API key for OpenAI services",
+      "required": true
+    },
+    "MONGODB_URL": {
+      "description": "MongoDB Atlas connection string",
+      "required": true
+    },
+    "MONGODB_DB_NAME": {
+      "description": "MongoDB database name",
+      "value": "nasa_hackathon"
+    },
+    "MONGODB_COLLECTION_NAME": {
+      "description": "MongoDB collection name",
+      "value": "organism_data"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}

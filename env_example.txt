@@ -1,0 +1,13 @@
+# OpenAI AI/ML API Configuration
+AIMLAPI_KEY=your_aimlapi_key_here
+
+# MongoDB Configuration (use MongoDB Atlas connection string for cloud)
+MONGODB_URL=mongodb+srv://username:password@cluster0.xxxxx.mongodb.net/nasa_hackathon?retryWrites=true&w=majority
+MONGODB_DB_NAME=nasa_hackathon
+MONGODB_COLLECTION_NAME=organism_data
+
+# For local MongoDB (alternative to Atlas)
+# MONGODB_URL=mongodb://localhost:27017
+
+# Heroku will set PORT automatically
+# PORT=8000
